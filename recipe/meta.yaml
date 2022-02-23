@@ -1,5 +1,5 @@
 {% set name = "pdpyras" %}
-{% set version = "4.4.0" %}
+{% set version = "4.5.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pdpyras-{{ version }}.tar.gz
-  sha256: b9ede6c54b6035324225314d1d5de3d0fdf7ea007519fb7fea29346c92e87c07
+  sha256: 0d09ab50ddd220c1b77f692ab68e1b4324c97811cdefd9c6e84665d5417e716e
 
 build:
   number: 0
