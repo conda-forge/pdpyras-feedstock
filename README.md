@@ -1,11 +1,11 @@
-About pdpyras
-=============
+About pdpyras-feedstock
+=======================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pdpyras-feedstock/blob/main/LICENSE.txt)
 
 Home: https://pagerduty.github.io/pdpyras
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pdpyras-feedstock/blob/main/LICENSE.txt)
 
 Summary: PagerDuty REST API client
 
