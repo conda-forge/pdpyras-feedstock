@@ -1,13 +1,13 @@
 {% set name = "pdpyras" %}
-{% set version = "5.3.0" %}
+{% set version = "5.4.0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pdpyras-{{ version }}.tar.gz
-  sha256: 0c5b514bea764bdd9e43685d9ede06afa2f504fa0c6799f1670d38ad3233fc6e
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/pdpyras-{{ version }}.tar.gz
+  sha256: 515c8a34b8f52ad38878c9df25d07ccb809de010d2b85b56d42858c03e7c1fcb
 
 build:
   number: 0
@@ -16,11 +16,11 @@ build:
 
 requirements:
   host:
-    - python >=3.6
+    - python {{ python_min }}
     - pip
     - setuptools
   run:
-    - python >=3.6
+    - python >={{ python_min }}
     - requests
     - urllib3
 
@@ -30,6 +30,7 @@ test:
   commands:
     - pip check
   requires:
+    - python {{ python_min }}
     - pip
 
 about:
